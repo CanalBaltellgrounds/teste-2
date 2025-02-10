@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Gastos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Controle de Gastos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro de Gastos</h2>
+            <form id="cadastro">
+                <input type="text" name="descricao" placeholder="Descrição do gasto" required>
+                <input type="number" name="valor" placeholder="Valor (R$)" step="0.01" required>
+                <label for="data">Data do gasto</label>
+                <input type="date" name="data" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Gastos Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="gastos">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>Desenvolvido por Kauê</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
